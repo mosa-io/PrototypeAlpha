@@ -10,6 +10,27 @@
   </head>
 
   <body>
-    <%= yield %>
+  <div>
+    <header>
+      <div>
+        <h3>Mosa</h3>
+        <nav>
+          <%= link_to 'Home', controller: :root, action: :index %>
+          <%= link_to 'Dashboard', controller: :dashboard, action: :index %>
+          <%= link_to 'Portfolio', controller: :portfolio, action: :index %>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <%= yield %>
+    </main>
+
+    <footer>
+      <div>
+        Some Footer Stuff
+      </div>
+    </footer>
+  </div>
   </body>
 </html>
