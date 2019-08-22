@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>PrototypeAlpha</title>
+    <title>Mosa</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
@@ -9,17 +9,12 @@
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
-  <body>
+  <body class="background">
   <div>
     <header>
-      <div>
-        <h3>Mosa</h3>
-        <nav>
-          <%= link_to 'Home', controller: :root, action: :index %>
-          <%= link_to 'Dashboard', controller: :dashboard, action: :index %>
-          <%= link_to 'Portfolio', controller: :portfolio, action: :index %>
-        </nav>
-      </div>
+      <header class="navbar navbar-expand navbar-dark flex-column flex-md-row mosa-navbar">
+        <a class="navbar-brand mr-0 mr-md-2" href="/">Mosa</a>
+      </header>
     </header>
 
     <main>
