@@ -1,1 +1,25 @@
-Your Dashboard Page!
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <h1>YouWork - <%= (Date.today - 1.month).strftime("%B") %> <%= (Date.today - 1.month).year %></h1>
+      <h5>Monthly Tech Report</h5>
+      <ul>
+        <li>Uptime: 97%</li>
+        <li>Number of Builds: 183</li>
+        <li>Code CoverageL: 47%</li>
+        <li>Code Quality: C</li>
+      </ul>
+      <h5>Transparency</h5>
+      <ul>
+        <li>Number of Slack Messages: 1572</li>
+        <li>Most active Slack user: Sally Jaeger</li>
+        <li>Most active Slack channel: random</li>
+        <li>KPI Progress: 63%</li>
+      </ul>
+      <h5>Sales by Month</h5>
+      <%= image_tag 'sales.png', height: 400 %>
+      <h5>Marketing Impressions by Month</h5>
+      <%= image_tag 'marketing.png', height: 400 %>
+    </div>
+  </div>
+</div>
