@@ -17,10 +17,6 @@
   background-color: #3a1f5d;
 }
 
-.background {
-  background-color: #f6d365;
-}
-
 .navbar-brand {
   color: #F7F7F7;
 }
@@ -39,4 +35,12 @@
 
   display: flex;
   align-items: center;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.introduction-text {
+  color: #5e5e5e;
 }
