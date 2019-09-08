@@ -1,25 +1,101 @@
 <div class="container">
   <div class="row">
-    <div class="col">
-      <h1>YouWork - as at <%= (Date.today - 1.month).strftime("%B") %> <%= (Date.today - 1.month).year %></h1>
-      <h5>Monthly Tech Report</h5>
-      <ul>
-        <li>Uptime: 97%</li>
-        <li>Number of Builds: 183</li>
-        <li>Code Coverage: 47%</li>
-        <li>Code Quality: C</li>
-      </ul>
-      <h5>Transparency</h5>
-      <ul>
-        <li>Number of Slack Messages: 1572</li>
-        <li>Most active Slack user: Sally Jaeger</li>
-        <li>Most active Slack channel: random</li>
-        <li>KPI Progress: 63%</li>
-      </ul>
-      <h5>Monthly Revenue</h5>
-      <%= image_tag 'sales.png', height: 400 %>
-      <h5>Marketing Spend by Month</h5>
-      <%= image_tag 'marketing.png', height: 400 %>
+    <div class="col-12">
+      <h1>YouWork Dashboard</h1>
     </div>
   </div>
+  <div class="row mt-5">
+    <h3 class="col-12 border-bottom">Growth</h3>
+    <ul class="col-6 list-unstyled mt-3">
+      <li>New visitor conversion rate: 23%</li>
+      <li>Return visitor conversion rate: 87%</li>
+      <li>Interactions per visit: 2.7</li>
+      <li>Cost per conversion: $0.19</li>
+      <li>Bounce rate: 46%</li>
+    </ul>
+    <ul class="col-6 list-unstyled mt-3">
+      <li>Best performing channel: Mosa</li>
+      <li>Best performing campaign: Transparency is Everything</li>
+      <li>Price per sign up: $2.34</li>
+      <li>LTV/CAC ratio: 3:1</li>
+    </ul>
+    <%= image_tag 'lead-sources.png', class: 'col-6' %>
+    <%= image_tag 'social-media-growth.png', class: 'col-6' %>
+  </div>
+  <div class="row mt-5">
+    <h3 class="col-12 border-bottom">Sales</h3>
+    <ul class="col-6 list-unstyled mt-3">
+      <li>Revenue growth last month: %150</li>
+      <li>ACV: $10,300</li>
+      <li>New Accounts: 97</li>
+      <li>New Leads: 390</li>
+      <li>Demos Scheduled: 213</li>
+    </ul>
+    <%= image_tag 'sales-v2.png', class: 'col-6' %>
+  </div>
+  <div class="row mt-5">
+    <h3 class="col-12 border-bottom">Tech</h3>
+    <ul class="col-6 list-unstyled mt-3">
+      <li>Uptime: 97%</li>
+      <li>Number of Builds: 183</li>
+      <li>Code Coverage: 47%</li>
+      <li>Pull requests outstanding: 3</li>
+      <li>Average deployment time: 28.5 minutes</li>
+      <li>Continuous integration score: C</li>
+      <li>Continuous delivery score: D</li>
+    </ul>
+    <div class="col-6 mt-3">
+      <p class="text-center">Code Quality:</p>
+      <p class="text-center display-1">F</p>
+    </div>
+  </div>
+  <div class="row mt-5">
+    <h3 class="col-12 border-bottom">Finances</h3>
+    <%= image_tag 'p-and-l-chart.png', class: 'col-6' %>
+    <ul class="col-6 list-unstyled mt-3">
+      <li>MRR: $120,000</li>
+      <li>ARR: $1,440,000</li>
+      <li></li>
+      <li>Gross Margin: --</li>
+      <li>Monthly Spend: $270,000</li>
+      <li></li>
+      <li>Cash: $1,500,000</li>
+      <li>Runway: 7 months</li>
+    </ul>
+  </div>
+  <div class="row mt-5">
+    <h3 class="col-12 border-bottom">Customer Success - Support - Happiness</h3>
+    <ul class="col-6 list-unstyled mt-3">
+      <li>Customer churn: 4%</li>
+      <li>MRR churn: 5%</li>
+      <li>Net MRR churn: 6%</li>
+      <li>Expansion MRR: 7%</li>
+      <li>Net promoter score (NPS): 80</li>
+      <li></li>
+      <li>New support tickets: 137</li>
+      <li>Tickets unresolved: 136</li>
+      <li>Install time: 1hr 35mins</li>
+      <li>Repeat issues: 134</li>
+    </ul>
+    <%= image_tag 'issues-reported.png', class: 'col-6' %>
+  </div>
+  <div class="row mt-5">
+    <h3 class="col-12 border-bottom">Communications</h3>
+    <ul class="col-6 list-unstyled mt-3">
+      <li>Number of Slack messages: 1572</li>
+      <li>Most active Slack user: Sally Jaeger</li>
+      <li>Most active Slack channel: random</li>
+      <li></li>
+      <li>New employees: 14</li>
+      <li>New employee messages: 14</li>
+      <li>Names and departments:
+        <ol>
+          <li>Joe Bloggs - HR</li>
+          <li>Joan Bloggs - Engineering</li>
+        </ol>
+      </li>
+    </ul>
+    <%= image_tag 'hr-reviews-completed.png', class: 'col-6' %>
+  </div>
+  <div class="row mt-5"></div>
 </div>
