@@ -14,7 +14,7 @@
   //"bootstrap-sprockets" must be imported before "bootstrap" and "bootstrap/variables"
 
 .mosa-navbar {
-  background-color: #3a1f5d;
+  background-color: #1b2186;
 }
 
 .navbar-brand {
@@ -39,6 +39,10 @@
 
 body {
   font-family: 'Open Sans', sans-serif;
+
+  &.background {
+    background-color: #CCCCCC;
+  }
 }
 
 .introduction-text {
@@ -47,4 +51,16 @@ body {
 
 .img-responsive {
   width: 100%;
+}
+
+.btn {
+  &.btn-mosa {
+    background-color: #1B2186;
+    border-color: #1B2186;
+
+    &:hover {
+      background-color: #262cd2;
+      border-color: #1B2186;
+    }
+  }
 }
