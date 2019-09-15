@@ -18,7 +18,7 @@
 }
 
 .navbar-brand {
-  color: #F7F7F7;
+  color: #EDEDED;
 }
 
 .vertical-center {
@@ -38,10 +38,24 @@
 }
 
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Lora', serif;
+  color: #3c3d3e;
 
   &.background {
-    background-color: #CCCCCC;
+    background-color: #DEDEDE;
+  }
+
+  a {
+    color: #1B2186;
+
+    &:hover {
+      color: #262cd2;
+      text-decoration: none;
+    }
+
+    &:active {
+      color: #262cff;
+    }
   }
 }
 
@@ -55,12 +69,17 @@ body {
 
 .btn {
   &.btn-mosa {
+    color: #EDEDED;
     background-color: #1B2186;
     border-color: #1B2186;
 
     &:hover {
       background-color: #262cd2;
       border-color: #1B2186;
+    }
+    &:active {
+      background-color: #262cd2;
+      border-color: #262cd2;
     }
   }
 }
